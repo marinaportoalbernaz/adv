@@ -33,8 +33,22 @@ header {
 
 		&.main-hero {
 			height: 80vh;
-			background-position: calc(50% - 350px) calc(100% + 20px);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto 300px;
+			background-color: #3A4145;
+			color: #fff; 
+
+			a {
+				color: #fff;
+				transition: color 0.2s ease;
+
+				&:hover {
+					color: #fefefe;
+				}
+			}
 		}
+
 
 		.container {
 			text-align: right;

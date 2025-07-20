@@ -26,20 +26,7 @@
 
 	<body>
 		<header style="background-image: url('{% include relative-src.html src=page.background_image_path %}');" {% if page.large_header %}class="main-hero"{% endif %}>
-			<div class="container">
-				<h1><a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a></h1>
-				<nav>
-					<ul>
-						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
-						{% for nav_page in nav_pages %}
-							{% if previous_page.path != nav_page.path %}
-								{% assign previous_page = nav_page %}
-								<li><a {% if nav_page.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ nav_page.url }}">{{ nav_page.title }}</a></li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</nav>
-			</div>
+			
 		</header>
 
 		<section class="main">
@@ -93,14 +80,13 @@
 							<h2>{{ site.data.company.title }}</h2>
 						</li>
 						<li>{{ site.data.company.description }}</li>
-						<li><a href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %} Subscribe with RSS</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="legal-line">
 				<p class="container">
-					&copy; {{ site.time | date: '%Y' }} {{ site.data.company.title }};
+					&copy; {{ site.time | date: '%Y' }} {{ site.data.company.title }}
 				</p>
 			</div>
 		</footer>
