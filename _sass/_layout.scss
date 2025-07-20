@@ -17,9 +17,11 @@ body {
 }
 
 header {
-	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-position: calc(50% - 40px) 175px;
+	background-size: auto 300px;
+	background-color: #3A4145;
+	color: #fff; 
 	height: 420px;
 	box-sizing: border-box;
 
