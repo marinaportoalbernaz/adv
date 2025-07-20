@@ -1,0 +1,29 @@
+---
+title:
+call_to_action: Contact
+background_image_path:
+large_header: true
+testimonials:
+  - message: Justice Law were everything we could have hoped for when buying our first home. Highly recommended to all.
+    image: "https://placebear.com/60/60?a=.png"
+    name: D. and G. Gibbleston
+_options:
+  image:
+    width: 60
+    height: 60
+---
+
+<div class="editable">
+	<p>Representação trabalhista com seriedade e compromisso.</p>
+
+	<p>Pelos direitos dos trabalhadores em todas as etapas do processo. Protegendo sua dignidade profissional com excelência jurídica.</p>
+</div>
+
+<div class="testimonials">
+	{% for testimonial in page.testimonials %}
+		<blockquote class="testimonial">
+			<p class="testimonial-message">{{ testimonial.message }}</p>
+			<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+		</blockquote>
+	{% endfor %}
+</div>

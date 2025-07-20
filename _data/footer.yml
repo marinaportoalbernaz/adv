@@ -1,0 +1,18 @@
+- title: Pages
+  links:
+    - name: Inicial
+      link: /
+    - name: Serviços
+      link: /services/
+    - name: Contato
+      link: /contact/
+- title: Social
+  links:
+    - name: Instagram
+      link: http://instagram.com/
+      social_icon: Instagram
+      new_window: true
+    - name: LinkedIn
+      link: https://nz.linkedin.com/company/cloud-cannon/
+      social_icon: LinkedIn
+      new_window: true
